@@ -1,5 +1,150 @@
 body {
     margin: 0;
     padding: 0;
-    background: url("/css/1.png") no-repeat top center;
+    background: url(../img/pages.jpg) no-repeat top center;
+  }
+
+  .container {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .main-header {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .header-top {
+    margin-bottom: 70px;
+  }
+
+  .header-top::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  .logo {
+    float: left;
+    width: 180px;
+    min-height: 85px;
+  }
+  
+  .main-menu {
+    float: right;
+    width: 670px;
+    margin-top: 20px;
+    min-height: 40px;
+  }
+  
+  .promo {
+    width: 440px;
+    min-height: 410px;
+  }
+
+  .features {
+    padding-top: 125px;
+    padding-bottom: 70px;
+  }
+
+  .features .container::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  .features-item {
+    float: left;
+    width: 310px;
+    margin-right: 40px;
+    min-height: 165px;
+  }
+
+  .features-item:last-child {
+    margin-right: 0px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+.gl0, .gl1, .gl2, .gl3 {
+    position: relative;
+  }
+  
+  .gl0:before, .gl1:before, .gl2:before, .gl3:before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    height: 20px;
+    padding: 2px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: "Courier New", monotype;
+    white-space: nowrap;
+  }
+  
+  .gl0 {
+    box-shadow: inset 0 0 0 2px blue;
+    background: rgba(0, 0, 255, .1);
+  }
+  
+  .gl0:before {
+    color: #fff;
+    background: rgba(0, 0, 255, .9);
+  }
+  
+  .gl1 {
+    box-shadow: 0 0 0 2px green;
+    background: rgba(0, 128, 0, .1);
+  }
+  
+  .gl1:before {
+    color: #fff;
+    background: rgba(0, 128, 0, .9);
+  }
+  
+  .gl2 {
+    box-shadow: 0 0 0 2px rgb(255, 45, 82);
+    background: rgba(255, 45, 82, .1);
+  }
+  
+  .gl2:before {
+    color: #fff;
+    background: rgba(255, 45, 82, .9);
+  }
+  
+  .gl3 {
+    box-shadow: 0 0 0 2px rgb(234, 255, 45);
+    background: rgba(234, 255, 45, .1);
+  }
+  
+  .gl3:before {
+    color: #000;
+    background: rgba(234, 255, 45, .8);
+  }
+  
+  .main-header:before{
+    content: ".main-header";
   }
