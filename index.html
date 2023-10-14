@@ -1,11 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A+</title>
 </head>
 <body>
+    <!-- 1 блок с меню и промо -->
+    <header class="main-header">
+        <div class="container">
+            <!-- Верхнее меню -->
+            <div class="header-top">
+                <!-- Логоти -->
+                <div class="logo">
+                    <img src="img/logo.png" width="182" height="82" alt="A+">
+                </div>
+                <!-- Меню -->
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="#">Программа обучения</a></li>
+                        <li><a href="#">Выпускники</a></li>
+                        <li><a href="#">Как поступить</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>   
+                </nav>
+            </div>
+            <!-- Блок с картинкой и текстом в главной странице -->
+            <div class="promo">
+                <div class="promo-title">
+                    Учеба еще никогда не была такой интересной!
+                </div>
+                <p>
+                    Обучаем готовых к трудоустройству специалистов на теоретических и практических курсах.
+                </p>
+                <a href="#" class="btn btn-blue">Подать заявку</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2 бок с фичами -->
+    <section class="features">
+        <div class="container">
+            <!-- График обучения -->
+            <div class="features-item">
+                <div class="features-icon features-icon-schedule">
+                    <h2 class="features-title">Гибкий график обучения</h2>
+                    <p>Современный темп жизни требует гибкого подхода к расписанию.</p>
+                </div>
+            </div>
+            <!-- Практические занятия -->
+            <div class="features-item">
+                <div class="features-icon features-icon-classes">
+                    <h2 class="features-title">Практические занятия</h2>
+                    <p>На одной теории далеко не уедешь, поэтому мы обучаем на практике.</p>
+                </div>
+            </div>
+            <!-- Не оставим без работы -->
+            <div class="features-item">
+                <div class="features-icon features-icon-work">
+                    <h2 class="features-title">Не оставим без работы</h2>
+                    <p>Хорошие специалисты всегда в цене и Вы станете именно таким.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <!-- 3 бок - фортмы обучения -->
+    <section class="information">
+        <div class="container">
+            <h2 class="information-title">Формы обучения</h2>
+            <table class="information-table">
+                <tr>
+                    <td>Название</td>
+                    <td>Длительность</td>
+                    <td>Описание</td>
+                </tr>
+                <tr>
+                    <td><b>Дневное обучение</b></td>
+                    <td><b>4 года</b></td>
+                    <td>Наиболее интенсивный вариант обучения, для тех, кто не терпит компромиссов ни в чем.</td>
+                </tr>
+                <tr>
+                    <td><b>Вечернее обучение</b></td>
+                    <td><b>5 лет</b></td>
+                    <td>Вынуждены совмещать учебу с работой? Дадим вам такую возможность, совмещайте на здоровье.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- 4 блок - обратная связь -->
+    <section class="contacts">
+        <div class="container">
+            <h2 class="contacts-title">Обратная связь</h2>
+            <!-- Поля для формы -->
+            <form action="" class="contacts-form" method="post"></form>
+            <table>
+                <!-- ФИО: -->
+                <tr>
+                    <td class="title">
+                        <label for="fullname">ФИО:</label>
+                    </td>
+                    <td class="field">
+                        <input type="text" id="fullname" name="fullname" placeholder="Представьтесь, пожалуйста">
+                    </td>
+                </tr>
+                <!-- Пол: -->
+                <tr>
+                    <td class="title">
+                        <label for="">Пол:</label>
+                    </td>
+                    <td class="field">
+                        <lable>
+                            <input type="radio" id="man" name="sex" value="man" checked>
+                            Мужской
+                        </lable>
+                        <lable>
+                            <input type="radio" id="woman" name="sex" value="woman">
+                            Женский
+                        </lable>
+                    </td>
+                </tr>
+                <!-- Доп.текст: -->
+                <tr>
+                    <td class="title">
+                        <label for="">Доп.текст:</label>
+                    </td>
+                    <td class="field">
+                        <textarea id="message" name="message" placeholder="Сообщите все, что считаете нужным"></textarea>
+                    </td>
+                </tr>
+                <!-- Кнопка отправить -->
+                <tr>
+                    <td class="title"></td>
+                    <td class="field">
+                        <input type="submit" class="btn btn-blue" value="Отправить">
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Чаcть для подсказок с правой стороны -->
+            <div class="contacts-instruction">
+                <h3>Заинтересовались обучением на нашей кафедре?</h3>
+                <p>Заполните короткую форму обратной связи и отправьте нам.</p>
+                <p>Мы подготовим для вас индивидуальное предложение и выйдем на связь!</p>
+                <p class="contacts-alert"><strong>Внимание!</strong> Все поля обязательны для заполнения.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 блок - подвал -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-address">
+                    <img src="img/logo-footer.png" width="182" height="82" alt="A+">
+                    <p>197101, г. Санкт-Петербург,<br>пр. Кронверкский, д. 49</p>
+                </div>
+                <div class="footer-menu">
+                    <!-- Обучение -->
+                    <h3>Обучение</h3>
+                    <ul>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">Предметы</a></li>
+                        <li><a href="#">Практика</a></li>
+                    </ul>
+
+                    <!-- Выпускники -->
+                    <h3>Выпускники</h3>
+                    <ul>
+                        <li><a href="#">Достижения</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Найти</a></li>
+                    </ul>
+
+                    <!-- Как поступить -->
+                    <h3>Как поступить</h3>
+                    <ul>
+                        <li><a href="#">На коммерцию</a></li>
+                        <li><a href="#">Целевой набор</a></li>
+                        <li><a href="#">На бюджет</a></li>
+                    </ul>
+
+                    <!-- Контакты -->
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Схема проезда</a></li>
+                        <li><a href="#">Телефон/факс</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"></div>
+        </div>
+    </footer>
 </body>
 </html>
