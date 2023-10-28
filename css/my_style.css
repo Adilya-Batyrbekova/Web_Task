@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../img/pages.jpg) no-repeat top center;
+    background: url(../img/style.png) no-repeat top center;
   }
 
   .container {
@@ -44,107 +44,133 @@ body {
   }
 
   .features {
-    padding-top: 125px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+      
   }
 
   .features .container::after {
+    
     display: table;
     clear: both;
     content: "";
   }
 
+  .features .container{
+    display: flex;
+    justify-content: center;
+  }
+
   .features-item {
     float: left;
-    width: 310px;
-    margin-right: 40px;
-    min-height: 165px;
+    width: 300px;
+    align-items: right;
+    margin-right: auto;
+    min-height: 190px;
   }
 
   .features-item:last-child {
     margin-right: 0px;
   }
 
+  .information {
+    padding-top: 20px;
+    padding-bottom: 75px;
+  }
 
+  .information-title,
+  .contacts-title {
+    margin: 0;
+    margin-bottom: 55px;
+    
+    min-height: 55px;
+  }
 
+  .container table{
+    border-collapse: collapse;
+    width:100%;
+    min-height: 275px;
+    border: none;
+  }
+  /* .container  td{
+    padding-left: 30px;
+  }
 
+  .first td{
+    min-height: 73px;
+    min-width: 255px;
+    background: lightgray;
+	  border: 1px solid #dddddd;
+  }
 
+  .second td {
+    min-height: 100px;
+    min-width: 255px;
+  }
 
+  .therd td {
+    min-height: 100px;
 
+  } */
+ 
 
+  .contacts {
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
 
+  .contacts-form {
+    float: left;
+    width: 620px;
+    min-height: 350px;
+  }
+  
+  .contacts-instruction {
+    float: right;
+    width: 320px;
+    min-height: 350px;
+  }
 
+  .contacts .container {
+    display: table;
+    clear: both;
+    content: "";
+  }
 
+  .main-footer {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
 
+  .main-footer .main-footer-menu::after{
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .footer-address {
+    float: left;
+    width: 300px;
+    margin-right: 40px;
+    min-height: 210px;
+  }
 
+  .main-footer .main-footer-menu{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-menu {
+    float: left;
+    width: 150px;
+    margin-right: auto;
+    margin-top: 25px;
+    min-height: 185px;
+  }
 
-
-
-
-
+  .footer-menu:last-child {
+    margin-right: 0px;
+  }
 
   /*======================================
  Системное оформление - не изменять
 =======================================*/
-
-.gl0, .gl1, .gl2, .gl3 {
-    position: relative;
-  }
-  
-  .gl0:before, .gl1:before, .gl2:before, .gl3:before {
-    content: '';
-    position: absolute;
-    left: -1px;
-    top: 0;
-    height: 20px;
-    padding: 2px 5px;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 20px;
-    font-family: "Courier New", monotype;
-    white-space: nowrap;
-  }
-  
-  .gl0 {
-    box-shadow: inset 0 0 0 2px blue;
-    background: rgba(0, 0, 255, .1);
-  }
-  
-  .gl0:before {
-    color: #fff;
-    background: rgba(0, 0, 255, .9);
-  }
-  
-  .gl1 {
-    box-shadow: 0 0 0 2px green;
-    background: rgba(0, 128, 0, .1);
-  }
-  
-  .gl1:before {
-    color: #fff;
-    background: rgba(0, 128, 0, .9);
-  }
-  
-  .gl2 {
-    box-shadow: 0 0 0 2px rgb(255, 45, 82);
-    background: rgba(255, 45, 82, .1);
-  }
-  
-  .gl2:before {
-    color: #fff;
-    background: rgba(255, 45, 82, .9);
-  }
-  
-  .gl3 {
-    box-shadow: 0 0 0 2px rgb(234, 255, 45);
-    background: rgba(234, 255, 45, .1);
-  }
-  
-  .gl3:before {
-    color: #000;
-    background: rgba(234, 255, 45, .8);
-  }
-  
-  .main-header:before{
-    content: ".main-header";
-  }
