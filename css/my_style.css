@@ -1,9 +1,17 @@
 body {
+    min-width: 1000px;
     margin: 0;
     padding: 0;
-    background: url(../img/style.png) no-repeat top center;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    line-height: normal;
+    color: #000000;
+    /* background: url(../img/style.png) no-repeat top center; */
   }
 
+  p{
+    font-family: Tahoma;
+  }
   .container {
     width: 1020px;
     margin: 0 auto;
@@ -13,6 +21,26 @@ body {
   .main-header {
     padding-top: 40px;
     padding-bottom: 80px;
+    background-color: #6451D5;
+  }
+
+  .main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main-menu li {
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-menu li:last-child {
+    margin-right: 0px;
   }
 
   .header-top {
@@ -28,19 +56,105 @@ body {
   .logo {
     float: left;
     width: 180px;
-    min-height: 85px;
+    height: 100px;
+  }
+  
+  .logo img {
+    display: block;
   }
   
   .main-menu {
     float: right;
     width: 670px;
     margin-top: 20px;
-    min-height: 40px;
   }
   
+  .main-menu a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .main-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .main-menu a:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 23px 80px;
+    vertical-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .btn-blue {
+    background: #382D78;
+  }
+  
+  .btn-blue:hover {
+    background: #32286C;
+  }
+  
+  .btn-blue:active {
+    background: #32286C;
+  }
+
   .promo {
+    position: relative;
+    z-index: 10;
     width: 440px;
-    min-height: 410px;
+  }
+
+  .promo::after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 380px;
+    z-index: -1;
+    width: 830px;
+    height: 433px;
+    background-image: url(../img/bg-promo.png);
+    background-repeat: no-repeat;
+  }
+
+  .promo-title {
+    margin-bottom: 30px;
+    color: #FFF;
+    font-family: Trebuchet MS;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .promo p {
+    margin: 0;
+    margin-bottom: 55px;
+    color: #BCB3F2;
+    font-family: Tahoma;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 379px;
+  }
+
+  .main-header .container:before{
+    content: none;
   }
 
   .features {
