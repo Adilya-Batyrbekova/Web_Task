@@ -1,5 +1,5 @@
   body {
-    min-width: 1000px;
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: Trebuchet MS;
@@ -15,7 +15,7 @@
   .container {
     width: 1020px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 30px;
   }
 
   .main-header {
@@ -159,7 +159,7 @@
 
   .features {
     padding-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 45px;
     background-color: #EFEFEF;
     /* min-height: 283px; */
       
@@ -172,7 +172,7 @@
     font-size: 22px;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   .features-item p {
@@ -203,7 +203,7 @@
     flex-direction: column;
     align-items: center;
     align-items: right;
-    margin-right: auto;
+    margin-right: 30px;
   }
 
   .features-item:last-child {
@@ -211,31 +211,40 @@
   }
 
   .features-icon {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center;
-    width: 108px;
-    height: 108px;
-    background-image: url(../img/sprite.png);
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    background-position: 50% 50%;
+    
+  }
+
+  .features-icon-schedule{
+    
+    background-image: url(../img/icon_adv_1.png);
     background-repeat: no-repeat;
   }
 
   .features-icon-classes{
-    background-position: -308px 0px;
+    background-image: url(../img/icon_adv_2.png);
+    background-repeat: no-repeat;
   }
 
   .features-icon-work{
-    background-position: -616px 0px;
+    background-image: url(../img/icon_adv_3.png);
+    background-repeat: no-repeat;
   }
 
   .information {
-    padding-top: 40px;
+    padding-top: 55px;
     padding-bottom: 75px;
   }
 
   .information-title,
   .contacts-title {
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 70px;
     /* min-height: 55px; */
     line-height: 48px;
     font-family: Trebuchet MS;
@@ -397,7 +406,7 @@
 
   .footer-address {
     float: left;
-    width: 300px;
+    width: 320px;
     margin-right: 40px;
   }
 
@@ -411,6 +420,8 @@
     font-size: 18px;
     font-weight: 400;
   }
+
+  
 
   .footer-menu {
     float: left;
